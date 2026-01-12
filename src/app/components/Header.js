@@ -15,13 +15,16 @@ import {
   User,
   X,
 } from "lucide-react";
-import Link from "next/link";
 import React, { useState } from "react";
+import allCategories from "../../../data/category";
+import Link from "next/link";
 
-export default function Header({ sidebarOpen, setSidebarOpen, cartCount }) {
+
+export default function Header({ cartCount = 3 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [couponCode, setCouponCode] = useState("");
   const [appliedCoupon, setAppliedCoupon] = useState(null);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const [cartItems, setCartItems] = useState([
     {
@@ -52,6 +55,8 @@ export default function Header({ sidebarOpen, setSidebarOpen, cartCount }) {
       category: "First Aid",
     },
   ]);
+
+  const categories = allCategories;
 
   const updateQuantity = (id, newQuantity) => {
     if (newQuantity < 1) return;
@@ -104,6 +109,11 @@ export default function Header({ sidebarOpen, setSidebarOpen, cartCount }) {
   const getShippingCost = () => {
     return calculateSubtotal() > 50 ? 0 : 5.99;
   };
+
+  const handleCategoryClick = () => {
+    setSidebarOpen(false);
+  };
+
   return (
     <div className="sticky top-0 w-full z-50">
       {/* Header */}
@@ -175,7 +185,7 @@ export default function Header({ sidebarOpen, setSidebarOpen, cartCount }) {
                 <ShoppingCart size={24} className="text-gray-600" />
                 {cartCount > 0 && (
                   <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                    ({cartItems.length})
+                    {cartItems.length}
                   </span>
                 )}
               </button>
@@ -197,19 +207,81 @@ export default function Header({ sidebarOpen, setSidebarOpen, cartCount }) {
             </div>
           </div>
 
-          {/* Overlay */}
-          {isOpen && (
+          {/* Sidebar Overlay */}
+          {sidebarOpen && (
             <div
               className="fixed inset-0 bg-opacity-50 z-40 transition-opacity"
+              onClick={() => setSidebarOpen(false)}
+            />
+          )}
+
+          {/* Sidebar - Categories (LEFT SIDE) */}
+          <div
+            className={`fixed top-0 left-0 h-full w-full sm:w-96 bg-white shadow-2xl z-50 transform transition-transform duration-300 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"
+              }`}
+          >
+            <div className="flex flex-col h-full">
+              {/* Header */}
+              <div className="flex items-center justify-between p-6 border-b bg-teal-600 text-white">
+                <div className="flex items-center gap-3">
+                  <Menu size={24} />
+                  <div>
+                    <h2 className="text-xl font-bold">Categories</h2>
+                    <p className="text-sm text-teal-100">
+                      Browse all categories
+                    </p>
+                  </div>
+                </div>
+                <button
+                  onClick={() => setSidebarOpen(false)}
+                  className="p-2 hover:bg-teal-700 rounded-lg transition"
+                >
+                  <X size={24} />
+                </button>
+              </div>
+
+              {/* Categories List */}
+              <div className="flex-1 overflow-y-auto p-6">
+                <div className="space-y-2">
+                  {categories.map((category, index) => (
+                    <Link
+                      key={index}
+                      href={`/category/${category.name
+                        .toLowerCase()
+                        .replace(/&/g, "and")
+                        .replace(/[^a-z0-9]+/g, "-")
+                        .replace(/(^-|-$)/g, "")}`}
+                      onClick={handleCategoryClick}
+                      className="w-full cursor-pointer flex items-center justify-between p-3 hover:bg-teal-50 rounded-lg transition-colors group"
+                    >
+                      <div className="flex items-center gap-3">
+                        <span className="text-2xl">{category.icon}</span>
+                        <span className="text-gray-700 group-hover:text-teal-600 text-sm font-medium">
+                          {category.name}
+                        </span>
+                      </div>
+                      <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                        {category.count}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Cart Overlay */}
+          {isOpen && (
+            <div
+              className="fixed inset-0  bg-opacity-50 z-40 transition-opacity"
               onClick={() => setIsOpen(false)}
             />
           )}
 
-          {/* Offcanvas Cart */}
+          {/* Cart Offcanvas (RIGHT SIDE) */}
           <div
-            className={`fixed top-0 right-0 h-full w-full sm:w-96 bg-white shadow-2xl z-50 transform transition-transform duration-300 ${
-              isOpen ? "translate-x-0" : "translate-x-full"
-            }`}
+            className={`fixed top-0 right-0 h-full w-full sm:w-96 bg-white shadow-2xl z-50 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"
+              }`}
           >
             <div className="flex flex-col h-full">
               {/* Header */}

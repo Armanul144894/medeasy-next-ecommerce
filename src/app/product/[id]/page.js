@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import {
   ShoppingCart,
   Heart,
@@ -12,99 +12,59 @@ import {
   Share2,
   ChevronRight,
   Home,
+  ChevronLeft,
 } from "lucide-react";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useParams } from "next/navigation";
+import React, { useMemo, useState } from "react";
+import products from "../../../../data/data";
 
 export default function page() {
+  const { id } = useParams(); // ✅ correct param
+  const slug = id
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
   const [quantity, setQuantity] = useState(1);
   const [selectedImage, setSelectedImage] = useState(0);
   const [activeTab, setActiveTab] = useState("description");
 
-  // Sample product data
-  const product = {
-    id: 1,
-    name: "Paracetamol 500mg Tablets",
-    category: "Pain Relief",
-    price: 5.99,
-    originalPrice: 8.99,
-    discount: "33% OFF",
-    rating: 4.5,
-    reviews: 234,
-    inStock: true,
-    stockCount: 45,
-    sku: "MED-PAR-500",
-    manufacturer: "HealthCare Pharma Ltd.",
-    images: [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1550572017-4845a78b5f2f?w=600&h=600&fit=crop",
-    ],
-    description:
-      "Paracetamol is a common painkiller used to treat aches and pain. It can also be used to reduce a high temperature. It is available combined with other painkillers and anti-sickness medicines. It is also an ingredient in a wide range of cold and flu remedies.",
-    features: [
-      "Fast-acting pain relief",
-      "Reduces fever effectively",
-      "Gentle on the stomach",
-      "Non-drowsy formula",
-      "Suitable for adults and children over 12",
-    ],
-    dosage:
-      "Adults and children aged 16 years and over: Take 1 to 2 tablets every 4 to 6 hours as needed. Do not take more than 8 tablets in 24 hours.",
-    warnings: [
-      "Do not exceed the stated dose",
-      "Keep out of reach of children",
-      "If symptoms persist, consult your doctor",
-      "Not suitable for children under 12 years",
-    ],
-  };
+const allProducts = products;
+  
 
-  const relatedProducts = [
-    {
-      id: 2,
-      name: "Ibuprofen 400mg",
-      price: 8.99,
-      originalPrice: 12.99,
-      image:
-        "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=300&h=300&fit=crop",
-      rating: 4.5,
-      discount: "31% OFF",
-    },
-    {
-      id: 3,
-      name: "Aspirin 75mg",
-      price: 6.99,
-      originalPrice: 9.99,
-      image:
-        "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&h=300&fit=crop",
-      rating: 4.3,
-      discount: "30% OFF",
-    },
-    {
-      id: 4,
-      name: "Digital Thermometer",
-      price: 15.99,
-      originalPrice: 22.99,
-      image:
-        "https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=300&h=300&fit=crop",
-      rating: 4.6,
-      discount: "30% OFF",
-    },
-    {
-      id: 5,
-      name: "First Aid Kit",
-      price: 29.99,
-      originalPrice: 44.99,
-      image:
-        "https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=300&h=300&fit=crop",
-      rating: 4.8,
-      discount: "33% OFF",
-    },
-  ];
+  const selectedProduct = useMemo(() => {
+    return allProducts.find(
+      (p) =>
+        p?.name
+          .toLowerCase()
+          .replace(/&/g, "and")
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/(^-|-$)/g, "") === slug
+    );
+  }, [slug]);
+
+  const category = selectedProduct?.category.toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+
+
+  const relatedProducts = useMemo(() => {
+    if (!category || !selectedProduct) return [];
+    return allProducts.filter(
+      (p) =>
+        p?.category
+          .toLowerCase()
+          .replace(/&/g, "and")
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/(^-|-$)/g, "") === category
+    );
+  }, [category]);
+
 
   const incrementQuantity = () => {
-    if (quantity < product.stockCount) {
+    if (quantity < selectedProduct.stockCount) {
       setQuantity(quantity + 1);
     }
   };
@@ -127,16 +87,16 @@ export default function page() {
           </Link>
           <ChevronRight size={16} />
           <Link
-            href={`/category/${product.category
+            href={`/category/${selectedProduct?.category
               .toLowerCase()
               .replace(/&/g, "and")
               .replace(/[^a-z0-9]+/g, "-")
               .replace(/(^-|-$)/g, "")}`}
           >
-            <button className="hover:text-teal-600">{product.category}</button>
+            <button className="hover:text-teal-600">{selectedProduct?.category}</button>
           </Link>
           <ChevronRight size={16} />
-          <span className="text-gray-800">{product.name}</span>
+          <span className="text-gray-800">{selectedProduct?.name}</span>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
@@ -145,32 +105,31 @@ export default function page() {
             {/* Main Image */}
             <div className="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
               <img
-                src={product.images[selectedImage]}
-                alt={product.name}
+                src={selectedProduct?.images[selectedImage]}
+                alt={selectedProduct?.name}
                 className="w-full h-96 object-cover"
               />
-              {product.discount && (
+              {selectedProduct?.discount && (
                 <span className="absolute top-4 right-4 bg-red-500 text-white text-sm font-bold px-3 py-1 rounded-full">
-                  {product.discount}
+                  {selectedProduct?.discount}
                 </span>
               )}
             </div>
 
             {/* Thumbnail Images */}
             <div className="grid grid-cols-4 gap-4">
-              {product.images.map((image, index) => (
+              {selectedProduct?.images.map((image, index) => (
                 <button
                   key={index}
                   onClick={() => setSelectedImage(index)}
-                  className={`bg-white rounded-lg overflow-hidden border-2 transition-all ${
-                    selectedImage === index
-                      ? "border-teal-600"
-                      : "border-gray-200 hover:border-teal-300"
-                  }`}
+                  className={`bg-white rounded-lg overflow-hidden border-2 transition-all ${selectedImage === index
+                    ? "border-teal-600"
+                    : "border-gray-200 hover:border-teal-300"
+                    }`}
                 >
                   <img
                     src={image}
-                    alt={`${product.name} ${index + 1}`}
+                    alt={`${selectedProduct?.name} ${index + 1}`}
                     className="w-full h-24 object-cover"
                   />
                 </button>
@@ -183,12 +142,12 @@ export default function page() {
             <div className="bg-white rounded-lg shadow-md p-6">
               {/* Category Badge */}
               <span className="inline-block bg-teal-100 text-teal-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">
-                {product.category}
+                {selectedProduct?.category}
               </span>
 
               {/* Product Name */}
               <h1 className="text-3xl font-bold text-gray-800 mb-3">
-                {product.name}
+                {selectedProduct?.name}
               </h1>
 
               {/* Rating */}
@@ -198,39 +157,38 @@ export default function page() {
                     <Star
                       key={i}
                       size={18}
-                      className={`${
-                        i < Math.floor(product.rating)
-                          ? "fill-yellow-400 text-yellow-400"
-                          : "text-gray-300"
-                      }`}
+                      className={`${i < Math.floor(selectedProduct?.rating)
+                        ? "fill-yellow-400 text-yellow-400"
+                        : "text-gray-300"
+                        }`}
                     />
                   ))}
                 </div>
                 <span className="text-gray-600">
-                  {product.rating} ({product.reviews} reviews)
+                  {selectedProduct?.rating} ({selectedProduct?.reviews} reviews)
                 </span>
               </div>
 
               {/* Price */}
               <div className="flex items-center gap-3 mb-6">
                 <span className="text-4xl font-bold text-teal-600">
-                  ${product.price}
+                  ${selectedProduct?.price}
                 </span>
                 <span className="text-xl text-gray-400 line-through">
-                  ${product.originalPrice}
+                  ${selectedProduct?.originalPrice}
                 </span>
                 <span className="bg-red-100 text-red-600 text-sm font-semibold px-3 py-1 rounded">
-                  Save ${(product.originalPrice - product.price).toFixed(2)}
+                  Save ${(selectedProduct?.originalPrice - selectedProduct?.price).toFixed(2)}
                 </span>
               </div>
 
               {/* Stock Status */}
               <div className="mb-6">
-                {product.inStock ? (
+                {selectedProduct?.inStock ? (
                   <div className="flex items-center gap-2 text-green-600">
                     <Check size={20} />
                     <span className="font-semibold">
-                      In Stock ({product.stockCount} available)
+                      In Stock ({selectedProduct?.stockCount} available)
                     </span>
                   </div>
                 ) : (
@@ -242,7 +200,7 @@ export default function page() {
 
               {/* Short Description */}
               <p className="text-gray-600 mb-6 leading-relaxed">
-                {product.description.substring(0, 200)}...
+                {selectedProduct?.description.substring(0, 200)}...
               </p>
 
               {/* Quantity Selector */}
@@ -265,7 +223,7 @@ export default function page() {
                     <button
                       onClick={incrementQuantity}
                       className="p-3 hover:bg-gray-100 transition"
-                      disabled={quantity >= product.stockCount}
+                      disabled={quantity >= selectedProduct?.stockCount}
                     >
                       <Plus size={20} />
                     </button>
@@ -273,7 +231,7 @@ export default function page() {
                   <span className="text-gray-600">
                     Total:{" "}
                     <span className="font-bold text-teal-600">
-                      ${(product.price * quantity).toFixed(2)}
+                      ${(selectedProduct?.price * quantity).toFixed(2)}
                     </span>
                   </span>
                 </div>
@@ -320,13 +278,13 @@ export default function page() {
                 <div className="flex justify-between">
                   <span className="text-gray-600">SKU:</span>
                   <span className="font-semibold text-gray-800">
-                    {product.sku}
+                    {selectedProduct?.sku}
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Manufacturer:</span>
                   <span className="font-semibold text-gray-800">
-                    {product.manufacturer}
+                    {selectedProduct?.manufacturer}
                   </span>
                 </div>
               </div>
@@ -341,43 +299,39 @@ export default function page() {
             <div className="flex">
               <button
                 onClick={() => setActiveTab("description")}
-                className={`px-6 py-4 font-semibold transition ${
-                  activeTab === "description"
-                    ? "text-teal-600 border-b-2 border-teal-600"
-                    : "text-gray-600 hover:text-teal-600"
-                }`}
+                className={`px-6 py-4 font-semibold transition ${activeTab === "description"
+                  ? "text-teal-600 border-b-2 border-teal-600"
+                  : "text-gray-600 hover:text-teal-600"
+                  }`}
               >
                 Description
               </button>
               <button
                 onClick={() => setActiveTab("dosage")}
-                className={`px-6 py-4 font-semibold transition ${
-                  activeTab === "dosage"
-                    ? "text-teal-600 border-b-2 border-teal-600"
-                    : "text-gray-600 hover:text-teal-600"
-                }`}
+                className={`px-6 py-4 font-semibold transition ${activeTab === "dosage"
+                  ? "text-teal-600 border-b-2 border-teal-600"
+                  : "text-gray-600 hover:text-teal-600"
+                  }`}
               >
                 Dosage & Usage
               </button>
               <button
                 onClick={() => setActiveTab("warnings")}
-                className={`px-6 py-4 font-semibold transition ${
-                  activeTab === "warnings"
-                    ? "text-teal-600 border-b-2 border-teal-600"
-                    : "text-gray-600 hover:text-teal-600"
-                }`}
+                className={`px-6 py-4 font-semibold transition ${activeTab === "warnings"
+                  ? "text-teal-600 border-b-2 border-teal-600"
+                  : "text-gray-600 hover:text-teal-600"
+                  }`}
               >
                 Warnings
               </button>
               <button
                 onClick={() => setActiveTab("reviews")}
-                className={`px-6 py-4 font-semibold transition ${
-                  activeTab === "reviews"
-                    ? "text-teal-600 border-b-2 border-teal-600"
-                    : "text-gray-600 hover:text-teal-600"
-                }`}
+                className={`px-6 py-4 font-semibold transition ${activeTab === "reviews"
+                  ? "text-teal-600 border-b-2 border-teal-600"
+                  : "text-gray-600 hover:text-teal-600"
+                  }`}
               >
-                Reviews ({product.reviews})
+                Reviews ({selectedProduct?.reviews})
               </button>
             </div>
           </div>
@@ -390,13 +344,13 @@ export default function page() {
                   Product Description
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  {product.description}
+                  {selectedProduct?.description}
                 </p>
                 <h4 className="font-semibold text-gray-800 mb-3">
                   Key Features:
                 </h4>
                 <ul className="space-y-2">
-                  {product.features.map((feature, index) => (
+                  {selectedProduct?.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <Check className="text-teal-600 mt-0.5" size={20} />
                       <span className="text-gray-600">{feature}</span>
@@ -412,7 +366,7 @@ export default function page() {
                   Dosage & Usage Instructions
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  {product.dosage}
+                  {selectedProduct?.dosage}
                 </p>
               </div>
             )}
@@ -423,7 +377,7 @@ export default function page() {
                   Important Warnings
                 </h3>
                 <ul className="space-y-3">
-                  {product.warnings.map((warning, index) => (
+                  {selectedProduct?.warnings.map((warning, index) => (
                     <li
                       key={index}
                       className="flex items-start gap-3 p-3 bg-red-50 rounded-lg"
@@ -502,49 +456,54 @@ export default function page() {
                 key={item.id}
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow cursor-pointer"
               >
-                <div className="relative">
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="w-full h-48 object-cover"
-                  />
-                  <span className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-                    {item.discount}
-                  </span>
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-gray-800 mb-2">
-                    {item.name}
-                  </h3>
-                  <div className="flex items-center gap-1 mb-2">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        size={14}
-                        className={`${
-                          i < Math.floor(item.rating)
+                <Link href={`/product/${item.name.toLowerCase()
+                  .replace(/&/g, 'and')
+                  .replace(/[^a-z0-9]+/g, '-')
+                  .replace(/(^-|-$)/g, '')}`}>
+                  <div className="relative">
+                    <img
+                      src={item.images[0]}
+                      alt={item.name}
+                      className="w-full h-48 object-cover"
+                    />
+                    <span className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+                      {item.discount}
+                    </span>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-semibold text-gray-800 mb-2">
+                      {item.name}
+                    </h3>
+                    <div className="flex items-center gap-1 mb-2">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          size={14}
+                          className={`${i < Math.floor(item.rating)
                             ? "fill-yellow-400 text-yellow-400"
                             : "text-gray-300"
-                        }`}
-                      />
-                    ))}
+                            }`}
+                        />
+                      ))}
+                    </div>
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-xl font-bold text-gray-800">
+                        ${item.price}
+                      </span>
+                      <span className="text-sm text-gray-400 line-through">
+                        ${item.originalPrice}
+                      </span>
+                    </div>
+                    <button className="w-full bg-teal-600 text-white py-2 rounded-lg hover:bg-teal-700 transition font-semibold">
+                      View Details
+                    </button>
                   </div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xl font-bold text-gray-800">
-                      ${item.price}
-                    </span>
-                    <span className="text-sm text-gray-400 line-through">
-                      ${item.originalPrice}
-                    </span>
-                  </div>
-                  <button className="w-full bg-teal-600 text-white py-2 rounded-lg hover:bg-teal-700 transition font-semibold">
-                    View Details
-                  </button>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
         </div>
+
       </div>
     </div>
   );
