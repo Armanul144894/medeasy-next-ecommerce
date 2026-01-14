@@ -18,6 +18,8 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import React, { useMemo, useState } from "react";
 import products from "../../../../data/data";
+import Image from "next/image";
+import RelatedProduct from "../components/RelatedProduct";
 
 export default function page() {
   const { id } = useParams(); // ✅ correct param
@@ -99,14 +101,16 @@ const allProducts = products;
           <span className="text-gray-800">{selectedProduct?.name}</span>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid xl:grid-cols-2 gap-8 mb-12">
           {/* Product Images */}
           <div>
             {/* Main Image */}
             <div className="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
-              <img
+              <Image
                 src={selectedProduct?.images[selectedImage]}
                 alt={selectedProduct?.name}
+                width={800}
+                height={800}
                 className="w-full h-96 object-cover"
               />
               {selectedProduct?.discount && (
@@ -127,9 +131,12 @@ const allProducts = products;
                     : "border-gray-200 hover:border-teal-300"
                     }`}
                 >
-                  <img
+
+                  <Image
                     src={image}
                     alt={`${selectedProduct?.name} ${index + 1}`}
+                    width={300}
+                    height={300}
                     className="w-full h-24 object-cover"
                   />
                 </button>
@@ -296,7 +303,7 @@ const allProducts = products;
         <div className="bg-white rounded-lg shadow-md mb-12">
           {/* Tab Headers */}
           <div className="border-b">
-            <div className="flex">
+            <div className="flex flex-wrap">
               <button
                 onClick={() => setActiveTab("description")}
                 className={`px-6 py-4 font-semibold transition ${activeTab === "description"
@@ -446,63 +453,8 @@ const allProducts = products;
         </div>
 
         {/* Related Products */}
-        <div>
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">
-            Related Products
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {relatedProducts.map((item) => (
-              <div
-                key={item.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow cursor-pointer"
-              >
-                <Link href={`/product/${item.name.toLowerCase()
-                  .replace(/&/g, 'and')
-                  .replace(/[^a-z0-9]+/g, '-')
-                  .replace(/(^-|-$)/g, '')}`}>
-                  <div className="relative">
-                    <img
-                      src={item.images[0]}
-                      alt={item.name}
-                      className="w-full h-48 object-cover"
-                    />
-                    <span className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-                      {item.discount}
-                    </span>
-                  </div>
-                  <div className="p-4">
-                    <h3 className="font-semibold text-gray-800 mb-2">
-                      {item.name}
-                    </h3>
-                    <div className="flex items-center gap-1 mb-2">
-                      {[...Array(5)].map((_, i) => (
-                        <Star
-                          key={i}
-                          size={14}
-                          className={`${i < Math.floor(item.rating)
-                            ? "fill-yellow-400 text-yellow-400"
-                            : "text-gray-300"
-                            }`}
-                        />
-                      ))}
-                    </div>
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className="text-xl font-bold text-gray-800">
-                        ${item.price}
-                      </span>
-                      <span className="text-sm text-gray-400 line-through">
-                        ${item.originalPrice}
-                      </span>
-                    </div>
-                    <button className="w-full bg-teal-600 text-white py-2 rounded-lg hover:bg-teal-700 transition font-semibold">
-                      View Details
-                    </button>
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
+        <RelatedProduct relatedProducts={relatedProducts}/>
+        
 
       </div>
     </div>

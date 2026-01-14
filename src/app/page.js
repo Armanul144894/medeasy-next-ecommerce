@@ -1,68 +1,20 @@
 "use client";
 import React, { useState } from "react";
 import {
-  ShoppingCart,
-  Search,
-  Menu,
-  X,
-  User,
   Heart,
-  Phone,
-  Mail,
-  MapPin,
-  ChevronRight,
   Star,
-  Truck,
-  Shield,
-  Clock,
-  Award,
-  ChevronLeft,
 } from "lucide-react";
 import Link from "next/link";
 import HeroBanner from "./components/HeroBanner";
 import Newsletter from "./components/Newsletter";
+import Image from "next/image";
+import FeaturedDeals from "./components/FeaturedDeals";
+import HomeCategories from "./components/HomeCategories";
+import HomeFeatures from "./components/HomeFeatures";
 
 const MedicineEcommerce = () => {
   const [cartCount, setCartCount] = useState(0);
 
-  const topCategories = [
-    {
-      name: "Vitamins & Supplements",
-      image:
-        "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=300&h=300&fit=crop",
-      color: "bg-blue-100",
-    },
-    {
-      name: "First Aid",
-      image:
-        "https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=300&h=300&fit=crop",
-      color: "bg-green-100",
-    },
-    {
-      name: "Baby Care",
-      image:
-        "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=300&h=300&fit=crop",
-      color: "bg-pink-100",
-    },
-    {
-      name: "Personal Care",
-      image:
-        "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=300&h=300&fit=crop",
-      color: "bg-purple-100",
-    },
-    {
-      name: "Pain Relief",
-      image:
-        "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&h=300&fit=crop",
-      color: "bg-red-100",
-    },
-    {
-      name: "Diabetes Care",
-      image:
-        "https://images.unsplash.com/photo-1526045478516-99145907023c?w=300&h=300&fit=crop",
-      color: "bg-yellow-100",
-    },
-  ];
 
   const products = [
     {
@@ -171,29 +123,6 @@ const MedicineEcommerce = () => {
     },
   ];
 
-  const featuredDeals = [
-    {
-      id: 1,
-      title: "Winter Health Pack",
-      description: "Complete immunity boost bundle",
-      price: 39.99,
-      originalPrice: 59.99,
-      image:
-        "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=400&fit=crop",
-      badge: "SAVE 33%",
-    },
-    {
-      id: 2,
-      title: "Diabetes Care Kit",
-      description: "Monitor + Test strips + Lancets",
-      price: 79.99,
-      originalPrice: 119.99,
-      image:
-        "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&h=400&fit=crop",
-      badge: "BEST SELLER",
-    },
-  ];
-
   const addToCart = (product) => {
     setCartCount(cartCount + 1);
   };
@@ -206,136 +135,13 @@ const MedicineEcommerce = () => {
         <HeroBanner />
 
         {/* Features */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          <div className="bg-white p-4 rounded-lg shadow-sm flex items-center gap-3">
-            <div className="bg-teal-100 p-3 rounded-full">
-              <Truck className="text-teal-600" size={24} />
-            </div>
-            <div>
-              <h3 className="font-semibold text-sm">Free Shipping</h3>
-              <p className="text-xs text-gray-500">On orders over $50</p>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-sm flex items-center gap-3">
-            <div className="bg-blue-100 p-3 rounded-full">
-              <Shield className="text-blue-600" size={24} />
-            </div>
-            <div>
-              <h3 className="font-semibold text-sm">Secure Payment</h3>
-              <p className="text-xs text-gray-500">100% protected</p>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-sm flex items-center gap-3">
-            <div className="bg-purple-100 p-3 rounded-full">
-              <Clock className="text-purple-600" size={24} />
-            </div>
-            <div>
-              <h3 className="font-semibold text-sm">24/7 Support</h3>
-              <p className="text-xs text-gray-500">Always available</p>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-sm flex items-center gap-3">
-            <div className="bg-orange-100 p-3 rounded-full">
-              <Award className="text-orange-600" size={24} />
-            </div>
-            <div>
-              <h3 className="font-semibold text-sm">Quality Products</h3>
-              <p className="text-xs text-gray-500">Certified & tested</p>
-            </div>
-          </div>
-        </div>
+        <HomeFeatures />
 
         {/* Categories Section */}
-        <div className="mb-8">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-2xl font-bold text-gray-800">
-              Shop by Category
-            </h2>
-            <button className="text-teal-600 font-semibold flex items-center gap-1 hover:gap-2 transition-all">
-              View All <ChevronRight size={20} />
-            </button>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {topCategories.map((cat, index) => (
-              <Link
-                href={`/category/${cat.name
-                  .toLowerCase()
-                  .replace(/&/g, "and")
-                  .replace(/[^a-z0-9]+/g, "-")
-                  .replace(/(^-|-$)/g, "")}`}
-                key={index}
-              >
-                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow cursor-pointer group">
-                  <div
-                    className={`${cat.color} p-4 flex items-center justify-center h-32`}
-                  >
-                    <img
-                      src={cat.image}
-                      alt={cat.name}
-                      className="w-20 h-20 object-cover rounded-full group-hover:scale-110 transition-transform"
-                    />
-                  </div>
-                  <div className="p-3 text-center">
-                    <h3 className="font-semibold text-sm text-gray-800">
-                      {cat.name}
-                    </h3>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
+        <HomeCategories />
 
         {/* Featured Deals */}
-        <div className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            Featured Deals
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {featuredDeals.map((deal) => (
-              <Link key={deal.id} href={`/category/${deal.title.toLowerCase()
-                .replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>
-                <div
-                  className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow relative"
-                >
-                  <div className="relative h-48">
-                    <img
-                      src={deal.image}
-                      alt={deal.title}
-                      className="w-full h-full object-cover"
-                    />
-                    <span className="absolute top-3 right-3 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                      {deal.badge}
-                    </span>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-800 mb-1">
-                      {deal.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm mb-4">
-                      {deal.description}
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <span className="text-2xl font-bold text-teal-600">
-                          ${deal.price}
-                        </span>
-                        <span className="text-gray-400 line-through ml-2">
-                          ${deal.originalPrice}
-                        </span>
-                      </div>
-                      <button className="bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 transition font-semibold">
-                        Buy Now
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-              </Link>
-
-            ))}
-          </div>
-        </div>
+        <FeaturedDeals />
 
         {/* Products Grid */}
         <div>
@@ -352,12 +158,14 @@ const MedicineEcommerce = () => {
                 .replace(/[^a-z0-9]+/g, '-')
                 .replace(/(^-|-$)/g, '')}`}>
                 <div
-                  className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+                  className="bg-white h-full rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
                 >
                   <div className="relative">
-                    <img
+                    <Image
                       src={product.image}
                       alt={product.name}
+                      width={400}
+                      height={200}
                       className="w-full h-48 object-cover"
                     />
                     <span className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
@@ -413,7 +221,7 @@ const MedicineEcommerce = () => {
         </div>
 
         {/* Newsletter Section */}
-        <Newsletter/>
+        <Newsletter />
       </main >
     </div >
   );

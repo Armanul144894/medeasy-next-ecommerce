@@ -6,6 +6,7 @@ import { useParams, useRouter } from "next/navigation";
 import React, { useMemo, useState } from "react";
 import products from "../../../../data/data";
 import allCategories from "../../../../data/category";
+import Image from "next/image";
 
 export default function ProductCategory() {
   const { id } = useParams(); // ✅ correct param
@@ -112,10 +113,14 @@ export default function ProductCategory() {
                 .replace(/(^-|-$)/g, '')}`}>
                 <div
 
-                  className="bg-white rounded-lg shadow-md overflow-hidden"
+                  className="bg-white h-full rounded-lg shadow-md overflow-hidden"
                 >
-                  <img
+                
+                  <Image
                     src={product.images[0]}
+                    alt={product.name}
+                    width={300}
+                    height={300}
                     className="w-full h-48 object-cover"
                   />
 

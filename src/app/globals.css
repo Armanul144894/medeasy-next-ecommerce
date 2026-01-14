@@ -30,5 +30,30 @@ button {
   cursor: pointer;
 }
 
+/* === Swiper Layout Fixes === */
+.swiper {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  height: auto !important;
+  width: calc(100% * slides);
+}
+
+
+.swiper-slide {
+  height: auto !important;
+  display: flex;
+}
+
+
+/* Keep custom navigation buttons visible */
+.cat-prev.swiper-button-disabled,
+.cat-next.swiper-button-disabled {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+
 
 

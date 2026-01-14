@@ -1,4 +1,5 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 
 export default function HeroBanner() {
@@ -6,29 +7,20 @@ export default function HeroBanner() {
     const heroSlides = [
         {
             id: 1,
-            title: 'Healthcare Made Easy',
-            subtitle: 'Get up to 50% off on selected medicines',
-            description: 'Shop now and save big on your healthcare essentials',
-            buttonText: 'Shop Now',
-            image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&h=500&fit=crop',
+            title: 'Slide 1',
+            image: 'https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fsliders%2FMedeasy-website_slider.png&w=3840&q=100',
             bgColor: 'from-teal-500 via-teal-600 to-cyan-600'
         },
         {
             id: 2,
-            title: 'Winter Wellness Sale',
-            subtitle: 'Boost your immunity this season',
-            description: 'Up to 40% off on vitamins and supplements',
-            buttonText: 'Explore Deals',
-            image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1200&h=500&fit=crop',
+            title: 'Slide 2',
+            image: 'https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fsliders%2FMedeasy-website-slider-for-innsaei.png&w=3840&q=100',
             bgColor: 'from-blue-500 via-blue-600 to-indigo-600'
         },
         {
             id: 3,
-            title: 'Free Home Delivery',
-            subtitle: 'On orders above $50',
-            description: 'Fast and secure delivery to your doorstep',
-            buttonText: 'Order Now',
-            image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&h=500&fit=crop',
+            title: 'Slide 3',
+            image: 'https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fsliders%2FMedEasy-26.jpg&w=3840&q=100',
             bgColor: 'from-purple-500 via-purple-600 to-pink-600'
         }
     ];
@@ -51,33 +43,24 @@ export default function HeroBanner() {
     return (
         <div>
             {/* Hero Banner Slider */}
-            <div className="relative rounded-lg overflow-hidden mb-6 h-64 md:h-80">
+            <div className="relative rounded-lg overflow-hidden mb-6 h-full min-h-[200px] md:min-h-[300px] xl:min-h-[400px]">
                 {heroSlides.map((slide, index) => (
                     <div
                         key={slide.id}
-                        className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+                        className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
                             }`}
                     >
                         <div className={`relative h-full bg-gradient-to-r ${slide.bgColor} text-white`}>
-                            <div className="absolute inset-0 opacity-20">
-                                <img
+                            <div className=" h-full">
+                                <Image
                                     src={slide.image}
                                     alt={slide.title}
-                                    className="w-full h-full object-cover"
+                                    width={2000}
+                                    height={800}
+                                    className="w-full h-full"
                                 />
                             </div>
-                            <div className="relative z-10 h-full flex items-center">
-                                <div className="container mx-auto px-8 md:px-12">
-                                    <div className="max-w-2xl">
-                                        <h2 className="text-3xl md:text-5xl font-bold mb-3">{slide.title}</h2>
-                                        <p className="text-xl md:text-2xl text-white/90 mb-2">{slide.subtitle}</p>
-                                        <p className="text-white/80 mb-6">{slide.description}</p>
-                                        <button className="bg-white text-teal-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg">
-                                            {slide.buttonText}
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 ))}

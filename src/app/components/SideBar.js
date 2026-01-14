@@ -7,9 +7,9 @@ export default function SideBar() {
     const categories = allCategories;
 
     return (
-        <div className='lg:sticky top-28 rounded-2xl max-h-[90vh] overflow-x-auto hidden lg:block'>
+        <div className='lg:sticky top-28 rounded-2xl max-h-[85vh] overflow-x-auto hidden lg:block'>
             <aside
-                className={`h-screen -translate-x-full lg:translate-x-0 lg:relative inset-y-0 bg-white lg:bg-transparent z-40 w-64 lg:w-80 `}
+                className={`h-screen -translate-x-full lg:translate-x-0 lg:relative inset-y-0 bg-white lg:bg-transparent z-40 w-64 lg:w-72 `}
             >
                 <div className="bg-white rounded-lg shadow-md p-4 lg:sticky lg:top-24">
                     <div className="flex items-center justify-between mb-4 lg:hidden">
