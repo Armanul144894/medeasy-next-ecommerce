@@ -1,17 +1,10 @@
 "use client";
 import {
-  ArrowRight,
-  Heart,
   Mail,
   Menu,
-  Minus,
   Phone,
-  Plus,
   Search,
-  ShoppingBag,
   ShoppingCart,
-  Tag,
-  Trash2,
   User,
   X,
 } from "lucide-react";
@@ -93,7 +86,7 @@ export default function Header({ cartCount = 3 }) {
                 <ShoppingCart size={24} className="text-gray-600" />
                 {cartCount > 0 && (
                   <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                    {cartItems.length}
+                    {cartCount}
                   </span>
                 )}
               </button>

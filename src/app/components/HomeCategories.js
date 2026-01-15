@@ -96,6 +96,18 @@ export default function HomeCategories() {
                     ))}
                 </Swiper>
             </div>
+
+            {/* Styles */}
+            <style jsx global>{`
+        .swiper-slide {
+          display: flex;
+          height: auto;
+        }
+        
+        .swiper-slide > * {
+          width: 100%;
+        }
+      `}</style>
         </section>
     );
 }

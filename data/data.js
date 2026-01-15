@@ -1088,7 +1088,7 @@ const products = [
     stockCount: 156,
     sku: "PC-SOAP-250",
     manufacturer: "CleanCare Labs",
-    images: ["https://images.unsplash.com/photo-1600857062241-98e5e6ca2413?w=600&h=600&fit=crop"],
+    images: ["https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&h=600&fit=crop"],
     description: "Antibacterial liquid soap for effective hand hygiene.",
     features: [
       "Kills bacteria",
@@ -1116,7 +1116,7 @@ const products = [
     stockCount: 112,
     sku: "PC-DEO-50",
     manufacturer: "FreshGuard Co.",
-    images: ["https://images.unsplash.com/photo-1571123292723-0ad35f62ae43?w=600&h=600&fit=crop"],
+    images: ["https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&h=600&fit=crop"],
     description: "48-hour protection roll-on deodorant.",
     features: [
       "48-hour protection",
@@ -1826,7 +1826,7 @@ const products = [
     stockCount: 87,
     sku: "EC-TEAR-DROP",
     manufacturer: "ClearVision Labs",
-    images: ["https://images.unsplash.com/photo-1598527892416-7c50c65a4a56?w=600&h=600&fit=crop"],
+    images: ["https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&h=600&fit=crop"],
     description: "Lubricating eye drops for dry eye relief.",
     features: [
       "Long-lasting relief",
@@ -2196,7 +2196,7 @@ const products = [
     stockCount: 156,
     sku: "OC-WHT-PAST",
     manufacturer: "BrightSmile Dental",
-    images: ["https://images.unsplash.com/photo-1622786041821-f7681d1e02a5?w=600&h=600&fit=crop"],
+    images: ["https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&h=600&fit=crop"],
     description: "Advanced whitening toothpaste for brighter, whiter teeth.",
     features: [
       "Removes surface stains",
@@ -2252,7 +2252,7 @@ const products = [
     stockCount: 98,
     sku: "OC-SENS-PAST",
     manufacturer: "SensoCare Dental",
-    images: ["https://images.unsplash.com/photo-1622786041821-f7681d1e02a5?w=600&h=600&fit=crop"],
+    images: ["https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&h=600&fit=crop"],
     description: "Specialized toothpaste for sensitive teeth relief.",
     features: [
       "Rapid relief",

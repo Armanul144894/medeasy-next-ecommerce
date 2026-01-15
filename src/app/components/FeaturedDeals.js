@@ -13,7 +13,7 @@ export default function FeaturedDeals() {
       price: 39.99,
       originalPrice: 59.99,
       image:
-        "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=300&fit=crop",
       badge: "SAVE 33%",
     },
     {
@@ -23,7 +23,17 @@ export default function FeaturedDeals() {
       price: 79.99,
       originalPrice: 119.99,
       image:
-        "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=400&h=300&fit=crop",
+      badge: "BEST SELLER",
+    },
+    {
+      id: 3,
+      title: "Diabetes Care Kit",
+      description: "Monitor + Test strips + Lancets",
+      price: 79.99,
+      originalPrice: 119.99,
+      image:
+        "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=300&fit=crop",
       badge: "BEST SELLER",
     },
   ];
@@ -34,7 +44,7 @@ export default function FeaturedDeals() {
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
             Featured Deals
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {featuredDeals.map((deal) => (
               <Link key={deal.id} href={`/category/${deal.title.toLowerCase()
                 .replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>
@@ -46,7 +56,7 @@ export default function FeaturedDeals() {
                       src={deal.image}
                       alt={deal.title}
                       width={400}
-                      height={200}
+                      height={300}
                       className="w-full h-full object-cover"
                     />
                     <span className="absolute top-3 right-3 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">

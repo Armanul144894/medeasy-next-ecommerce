@@ -41,7 +41,7 @@ export default function page() {
             name: 'Vitamin D3 1000 IU',
             price: 12.99,
             quantity: 1,
-            image: 'https://images.unsplash.com/photo-1550572017-4845a78b5f2f?w=100&h=100&fit=crop'
+            image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=200&h=200&fit=crop'
         },
         {
             id: 3,

@@ -103,9 +103,9 @@ const allProducts = products;
 
         <div className="grid xl:grid-cols-2 gap-8 mb-12">
           {/* Product Images */}
-          <div>
+          <div className="">
             {/* Main Image */}
-            <div className="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+            <div className="bg-white rounded-lg shadow-md mb-4 overflow-hidden relative">
               <Image
                 src={selectedProduct?.images[selectedImage]}
                 alt={selectedProduct?.name}
