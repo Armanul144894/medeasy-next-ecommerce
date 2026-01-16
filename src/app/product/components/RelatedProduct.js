@@ -42,44 +42,47 @@ export default function RelatedProduct({ relatedProducts }) {
           }}
           spaceBetween={16}
           slidesPerView={2}
+          speed={2000}
           observer
           observeParents
           watchOverflow
           breakpoints={{
             640: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
-            1380: { slidesPerView: 4 },
+            1380: { slidesPerView: 5 },
           }}
           className="w-full max-w-full"
         >
-          {relatedProducts.map((item) => (
-            <SwiperSlide key={item.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow cursor-pointer">
-              <Link href={`/product/${item.name.toLowerCase()
+          {relatedProducts?.map((item) => (
+            <SwiperSlide key={item?.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow cursor-pointer">
+              <Link href={`/product/${item?.name.toLowerCase()
                 .replace(/&/g, 'and')
                 .replace(/[^a-z0-9]+/g, '-')
                 .replace(/(^-|-$)/g, '')}`}>
                 <div className="relative">
                   <Image
-                    src={item.images[0]}
-                    alt={item.name}
-                    width={800}
-                    height={800}
-                    className="w-full h-48 object-cover"
+                    src={item?.images[0]}
+                    alt={item?.name}
+                    width={300}
+                    height={300}
+                    className="w-full h-48 object-contain"
                   />
-                  <span className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-                    {item.discount}
-                  </span>
+                  {item?.discount && (
+                    <span className="absolute top-4 right-4 bg-red-500 text-white text-sm font-bold px-3 py-1 rounded-full">
+                      {item?.discount}
+                    </span>
+                  )}
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold text-gray-800 mb-2">
-                    {item.name}
+                    {item?.name}
                   </h3>
                   <div className="flex items-center gap-1 mb-2">
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
                         size={14}
-                        className={`${i < Math.floor(item.rating)
+                        className={`${i < Math.floor(item?.rating)
                           ? "fill-yellow-400 text-yellow-400"
                           : "text-gray-300"
                           }`}
@@ -88,10 +91,10 @@ export default function RelatedProduct({ relatedProducts }) {
                   </div>
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xl font-bold text-gray-800">
-                      ${item.price}
+                      ${item?.price}
                     </span>
                     <span className="text-sm text-gray-400 line-through">
-                      ${item.originalPrice}
+                      ${item?.originalPrice}
                     </span>
                   </div>
                   <button className="w-full bg-teal-600 text-white py-2 rounded-lg hover:bg-teal-700 transition font-semibold">

@@ -68,10 +68,10 @@ export default function CategoryProduct({ category, products }) {
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={16}
-          slidesPerView={1.2}
+          slidesPerView={1}
           onSwiper={setSwiperInstance}
           onSlideChange={handleSlideChange}
-          speed={600}
+          speed={1200}
           watchOverflow={true}
           breakpoints={{
             // Mobile - Medium (375px)

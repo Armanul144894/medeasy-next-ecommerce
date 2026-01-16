@@ -6,11 +6,11 @@ import { useParams } from "next/navigation";
 import React, { useMemo } from "react";
 import products from "../../../../data/data";
 import allCategories from "../../../../data/category";
-import FilteredProductCard from "../components/FilteredProductCard";
+import FilteredProductCard from "./FilteredProductCard";
 
 
 
-export default function ProductCategory() {
+export default function ProductCategoryCard() {
   const { id } = useParams(); // ✅ correct param
   
   const slug = id
@@ -100,3 +100,4 @@ export default function ProductCategory() {
     </div>
   );
 }
+ 

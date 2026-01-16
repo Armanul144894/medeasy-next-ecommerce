@@ -6,6 +6,11 @@ import React from 'react'
 export default function FilteredProductCard({ filteredProducts }) {
   return (
     <div>
+      {filteredProducts?.length === 0 ? (
+          <div className="text-center py-12 bg-white rounded-lg shadow-md py-3">
+            No products found.
+          </div>
+        ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {filteredProducts?.map((product) => (
 
@@ -22,8 +27,8 @@ export default function FilteredProductCard({ filteredProducts }) {
                     src={product?.images[0]}
                     alt={product?.name}
                     width={300}
-                    height={300}
-                    className="w-full h-48 object-cover"
+                    height={200}
+                    className="w-full h-64 object-cover"
                   />
 
                   <div className="p-4">
@@ -62,6 +67,7 @@ export default function FilteredProductCard({ filteredProducts }) {
 
             ))}
           </div>
+          )}
     </div>
   )
 }

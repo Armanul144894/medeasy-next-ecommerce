@@ -14,8 +14,8 @@ const products = [
     sku: "MED-PAR-500",
     manufacturer: "HealthCare Pharma Ltd.",
     images: [
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop",
+      "https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-iYJBxNyKM76CFb9AlM40f8peduyRkJ.jpg&w=750&q=75",
+      "https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75",
     ],
     description: "Paracetamol is a common painkiller used to treat aches and pain. It can also be used to reduce a high temperature.",
     features: [
@@ -44,7 +44,7 @@ const products = [
     stockCount: 38,
     sku: "MED-IBU-400",
     manufacturer: "PainAway Pharmaceuticals",
-    images: ["https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_0NocXVY.png&w=256&q=100"],
     description: "Ibuprofen provides effective relief from pain, inflammation and fever. Suitable for headaches, dental pain, period pain, and muscular aches.",
     features: [
       "Anti-inflammatory action",
@@ -72,7 +72,7 @@ const products = [
     stockCount: 62,
     sku: "MED-ASP-75",
     manufacturer: "CardioHealth Labs",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_3_fbyDUCX.png&w=256&q=100"],
     description: "Low-dose aspirin for cardiovascular health and mild pain relief.",
     features: [
       "Blood thinning properties",
@@ -100,7 +100,7 @@ const products = [
     stockCount: 27,
     sku: "MED-NAP-250",
     manufacturer: "ReliefMed Inc.",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_12.png&w=256&q=100"],
     description: "Long-acting anti-inflammatory for arthritis, muscle pain, and period pain.",
     features: [
       "12-hour relief",
@@ -128,7 +128,7 @@ const products = [
     stockCount: 18,
     sku: "MED-COD-PAR",
     manufacturer: "HealthCare Pharma Ltd.",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2F01-combo.png&w=256&q=100"],
     description: "Combination painkiller for moderate to severe pain relief.",
     features: [
       "Dual-action formula",
@@ -156,7 +156,7 @@ const products = [
     stockCount: 41,
     sku: "MED-HEAT-BACK",
     manufacturer: "ThermaRelief Solutions",
-    images: ["https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-5Di5ZBQiGjj1TcIWs6aydbGw7JUFFg.jpg&w=640&q=100"],
     description: "Self-heating patches that provide targeted heat therapy for back pain relief.",
     features: [
       "Up to 8 hours of heat",
@@ -184,7 +184,7 @@ const products = [
     stockCount: 29,
     sku: "MED-MIG-REL",
     manufacturer: "NeuroHealth Pharma",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Specialized formula for fast migraine and severe headache relief.",
     features: [
       "Fast-dissolving tablets",
@@ -212,7 +212,7 @@ const products = [
     stockCount: 55,
     sku: "MED-MUS-CRM",
     manufacturer: "SportsMed Pro",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Topical cream for muscle aches, strains, and sports injuries.",
     features: [
       "Fast-absorbing formula",
@@ -240,7 +240,7 @@ const products = [
     stockCount: 33,
     sku: "MED-JNT-CAP",
     manufacturer: "ArthriCare Labs",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Advanced formula for joint pain, stiffness, and arthritis support.",
     features: [
       "Glucosamine & Chondroitin",
@@ -268,7 +268,7 @@ const products = [
     stockCount: 47,
     sku: "MED-PER-REL",
     manufacturer: "FemHealth Solutions",
-    images: ["https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-5Di5ZBQiGjj1TcIWs6aydbGw7JUFFg.jpg&w=640&q=100"],
     description: "Specifically formulated for menstrual cramp relief and period-related pain.",
     features: [
       "Targets period cramps",
@@ -296,7 +296,7 @@ const products = [
     stockCount: 39,
     sku: "MED-DEN-GEL",
     manufacturer: "OralCare Pharma",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Fast-acting topical gel for toothache and gum pain relief.",
     features: [
       "Numbing action",
@@ -324,7 +324,7 @@ const products = [
     stockCount: 22,
     sku: "MED-ART-CRM",
     manufacturer: "ArthriCare Labs",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Advanced topical cream for arthritis pain and joint stiffness.",
     features: [
       "Deep-penetrating formula",
@@ -354,7 +354,7 @@ const products = [
     stockCount: 78,
     sku: "VIT-MULTI-ADT",
     manufacturer: "VitaLife Nutrition",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Comprehensive daily multivitamin with essential vitamins and minerals for overall health.",
     features: [
       "25+ essential nutrients",
@@ -382,7 +382,7 @@ const products = [
     stockCount: 92,
     sku: "VIT-D3-1000",
     manufacturer: "SunHealth Supplements",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Essential vitamin D3 for bone health, immune function, and mood support.",
     features: [
       "Supports bone strength",
@@ -410,7 +410,7 @@ const products = [
     stockCount: 64,
     sku: "VIT-OMG-1000",
     manufacturer: "OceanPure Labs",
-    images: ["https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-5Di5ZBQiGjj1TcIWs6aydbGw7JUFFg.jpg&w=640&q=100"],
     description: "High-quality omega-3 fish oil for heart, brain, and joint health.",
     features: [
       "EPA & DHA rich",
@@ -438,7 +438,7 @@ const products = [
     stockCount: 105,
     sku: "VIT-C-1000",
     manufacturer: "ImmuneBoost Co.",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "High-strength vitamin C for immune support and antioxidant protection.",
     features: [
       "Immune system support",
@@ -466,7 +466,7 @@ const products = [
     stockCount: 58,
     sku: "VIT-CAL-D",
     manufacturer: "BoneStrong Nutrition",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Combined calcium and vitamin D for optimal bone health and strength.",
     features: [
       "Strengthens bones",
@@ -494,7 +494,7 @@ const products = [
     stockCount: 71,
     sku: "VIT-B-COMP",
     manufacturer: "EnergyVit Labs",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Complete B-vitamin complex for energy, metabolism, and nervous system support.",
     features: [
       "All 8 B vitamins",
@@ -522,7 +522,7 @@ const products = [
     stockCount: 83,
     sku: "VIT-IRON-14",
     manufacturer: "VitaLife Nutrition",
-    images: ["https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-5Di5ZBQiGjj1TcIWs6aydbGw7JUFFg.jpg&w=640&q=100"],
     description: "Gentle iron supplement for preventing and treating iron deficiency anemia.",
     features: [
       "Gentle on stomach",
@@ -550,7 +550,7 @@ const products = [
     stockCount: 45,
     sku: "VIT-PROB-10B",
     manufacturer: "GutHealth Pro",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Advanced probiotic formula for digestive health and immune support.",
     features: [
       "10 billion live cultures",
@@ -578,7 +578,7 @@ const products = [
     stockCount: 67,
     sku: "VIT-MAG-250",
     manufacturer: "MineralWell Supplements",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Essential magnesium for muscle function, sleep quality, and stress relief.",
     features: [
       "Reduces muscle cramps",
@@ -606,7 +606,7 @@ const products = [
     stockCount: 89,
     sku: "VIT-ZINC-25",
     manufacturer: "ImmuneBoost Co.",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Zinc supplement for immune function, skin health, and wound healing.",
     features: [
       "Immune system support",
@@ -636,7 +636,7 @@ const products = [
     stockCount: 52,
     sku: "CF-REL-CAP",
     manufacturer: "FluAway Pharma",
-    images: ["https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-5Di5ZBQiGjj1TcIWs6aydbGw7JUFFg.jpg&w=640&q=100"],
     description: "Multi-symptom relief for cold and flu including fever, aches, and congestion.",
     features: [
       "Relieves multiple symptoms",
@@ -664,7 +664,7 @@ const products = [
     stockCount: 96,
     sku: "CF-THR-LOZ",
     manufacturer: "SootheThroat Labs",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Soothing throat lozenges with antibacterial properties for sore throat relief.",
     features: [
       "Soothes sore throat",
@@ -692,7 +692,7 @@ const products = [
     stockCount: 44,
     sku: "CF-NAS-SPR",
     manufacturer: "BreathEasy Solutions",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Fast-acting nasal spray for blocked nose relief due to colds, flu, or allergies.",
     features: [
       "Works in minutes",
@@ -720,7 +720,7 @@ const products = [
     stockCount: 38,
     sku: "CF-CGH-DRY",
     manufacturer: "CoughCare Pharma",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Soothing syrup for relief of dry, tickly, irritating coughs.",
     features: [
       "Suppresses dry cough",
@@ -748,7 +748,7 @@ const products = [
     stockCount: 61,
     sku: "CF-CHT-RUB",
     manufacturer: "VapoRelief Co.",
-    images: ["https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-5Di5ZBQiGjj1TcIWs6aydbGw7JUFFg.jpg&w=640&q=100"],
     description: "Medicated chest rub with eucalyptus and menthol for congestion relief.",
     features: [
       "Relieves congestion",
@@ -776,7 +776,7 @@ const products = [
     stockCount: 72,
     sku: "CF-HOT-LEM",
     manufacturer: "WarmRelief Pharma",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Soothing hot lemon drink for cold and flu symptom relief.",
     features: [
       "Multi-symptom relief",
@@ -804,7 +804,7 @@ const products = [
     stockCount: 85,
     sku: "CF-VIT-EFF",
     manufacturer: "ImmuneBoost Co.",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "High-dose vitamin C effervescent tablets to support immune system during colds.",
     features: [
       "1000mg Vitamin C",
@@ -832,7 +832,7 @@ const products = [
     stockCount: 41,
     sku: "CF-SIN-TAB",
     manufacturer: "SinusClear Labs",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Targeted relief for sinus congestion, pressure, and headache.",
     features: [
       "Relieves sinus pressure",
@@ -890,7 +890,7 @@ const products = [
     stockCount: 94,
     sku: "FA-ANT-CRM",
     manufacturer: "WoundCare Pro",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Antiseptic cream for minor cuts, burns, and skin infections.",
     features: [
       "Prevents infection",
@@ -918,7 +918,7 @@ const products = [
     stockCount: 67,
     sku: "FA-BRN-GEL",
     manufacturer: "BurnCool Solutions",
-    images: ["https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-5Di5ZBQiGjj1TcIWs6aydbGw7JUFFg.jpg&w=640&q=100"],
     description: "Cooling gel for minor burns, scalds, and sunburn relief.",
     features: [
       "Instant cooling relief",
@@ -946,7 +946,7 @@ const products = [
     stockCount: 103,
     sku: "FA-GAU-10PK",
     manufacturer: "MediCare Supplies",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Sterile gauze pads for wound dressing and cleaning.",
     features: [
       "Individually wrapped",
@@ -974,7 +974,7 @@ const products = [
     stockCount: 89,
     sku: "FA-CLD-PCK",
     manufacturer: "QuickRelief Medical",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Instant cold pack for sprains, strains, and bruises.",
     features: [
       "Activates instantly",
@@ -1002,7 +1002,7 @@ const products = [
     stockCount: 76,
     sku: "FA-HYD-3PC",
     manufacturer: "CleanWound Labs",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Antiseptic solution for cleaning wounds and preventing infection.",
     features: [
       "Kills bacteria",
@@ -1032,7 +1032,7 @@ const products = [
     stockCount: 142,
     sku: "PC-SAN-250",
     manufacturer: "CleanHands Pro",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "70% alcohol hand sanitizer gel that kills 99.9% of germs.",
     features: [
       "Kills 99.9% germs",
@@ -1060,7 +1060,7 @@ const products = [
     stockCount: 87,
     sku: "PC-LOT-400",
     manufacturer: "SkinSoft Solutions",
-    images: ["https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-MOdbPvRMotiueNWQLLet1JpwZIDnGG.png&w=750&q=75"],
     description: "Rich moisturizing lotion for dry and sensitive skin.",
     features: [
       "24-hour hydration",
@@ -1088,7 +1088,7 @@ const products = [
     stockCount: 156,
     sku: "PC-SOAP-250",
     manufacturer: "CleanCare Labs",
-    images: ["https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FMoov_100.webp&w=640&q=100"],
     description: "Antibacterial liquid soap for effective hand hygiene.",
     features: [
       "Kills bacteria",
@@ -1116,7 +1116,7 @@ const products = [
     stockCount: 112,
     sku: "PC-DEO-50",
     manufacturer: "FreshGuard Co.",
-    images: ["https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2F8901248701129.jpg&w=1920&q=75"],
     description: "48-hour protection roll-on deodorant.",
     features: [
       "48-hour protection",
@@ -1144,7 +1144,7 @@ const products = [
     stockCount: 198,
     sku: "PC-WIPE-60",
     manufacturer: "QuickClean Solutions",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Convenient antibacterial wipes for hands and surfaces.",
     features: [
       "Kills 99.9% bacteria",
@@ -1200,7 +1200,7 @@ const products = [
     stockCount: 215,
     sku: "PC-SWAB-200",
     manufacturer: "PureTouch Products",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "High-quality cotton swabs for personal hygiene and makeup application.",
     features: [
       "100% pure cotton",
@@ -1258,7 +1258,7 @@ const products = [
     stockCount: 64,
     sku: "BC-FEV-SUS",
     manufacturer: "PediaHealth Pharma",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Gentle paracetamol suspension for babies and infants.",
     features: [
       "Sugar-free formula",
@@ -1314,7 +1314,7 @@ const products = [
     stockCount: 56,
     sku: "BC-GRIPE-150",
     manufacturer: "TummyCalm Solutions",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Natural gripe water for infant colic and gas relief.",
     features: [
       "Natural herbal formula",
@@ -1370,7 +1370,7 @@ const products = [
     stockCount: 91,
     sku: "BC-TEETH-GEL",
     manufacturer: "SootheGums Labs",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Soothing gel for teething pain relief.",
     features: [
       "Sugar-free",
@@ -1428,7 +1428,7 @@ const products = [
     stockCount: 67,
     sku: "DC-STRIP-50",
     manufacturer: "GlucoCheck Pro",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Compatible test strips for blood glucose monitoring.",
     features: [
       "Accurate results",
@@ -1456,7 +1456,7 @@ const products = [
     stockCount: 124,
     sku: "DC-LAN-100",
     manufacturer: "SafeStick Medical",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Sterile lancets for blood sampling.",
     features: [
       "Ultra-thin gauge",
@@ -1484,7 +1484,7 @@ const products = [
     stockCount: 58,
     sku: "DC-FOOT-CRM",
     manufacturer: "DiabetCare Solutions",
-    images: ["https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-MOdbPvRMotiueNWQLLet1JpwZIDnGG.png&w=750&q=75"],
     description: "Specialized moisturizing cream for diabetic foot care.",
     features: [
       "Intense hydration",
@@ -1512,7 +1512,7 @@ const products = [
     stockCount: 89,
     sku: "DC-ENERGY-TAB",
     manufacturer: "GlucoBalance Labs",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Fast-acting glucose tablets for hypoglycemia.",
     features: [
       "4g glucose per tablet",
@@ -1570,7 +1570,7 @@ const products = [
     stockCount: 71,
     sku: "HH-OMG-1200",
     manufacturer: "CardioHealth Labs",
-    images: ["https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-5Di5ZBQiGjj1TcIWs6aydbGw7JUFFg.jpg&w=640&q=100"],
     description: "High-potency omega-3 specifically formulated for cardiovascular health.",
     features: [
       "1200mg EPA+DHA",
@@ -1598,7 +1598,7 @@ const products = [
     stockCount: 55,
     sku: "HH-COQ-100",
     manufacturer: "CardioVital Supplements",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Coenzyme Q10 for heart health and cellular energy production.",
     features: [
       "Supports heart muscle",
@@ -1626,7 +1626,7 @@ const products = [
     stockCount: 126,
     sku: "HH-ASP-75",
     manufacturer: "CardioHealth Labs",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Low-dose aspirin for cardiovascular protection (as recommended by doctor).",
     features: [
       "Blood-thinning properties",
@@ -1654,7 +1654,7 @@ const products = [
     stockCount: 48,
     sku: "HH-CHOL-SUPP",
     manufacturer: "HeartWell Nutrition",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Natural formula with plant sterols to support healthy cholesterol levels.",
     features: [
       "Plant sterol esters",
@@ -1684,7 +1684,7 @@ const products = [
     stockCount: 98,
     sku: "DH-ANT-MINT",
     manufacturer: "DigestEase Pharma",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Fast-acting antacid for heartburn and indigestion relief.",
     features: [
       "Quick relief",
@@ -1712,7 +1712,7 @@ const products = [
     stockCount: 54,
     sku: "DH-PROB-20B",
     manufacturer: "GutHealth Pro",
-    images: ["https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-5Di5ZBQiGjj1TcIWs6aydbGw7JUFFg.jpg&w=640&q=100"],
     description: "High-potency probiotic with 10 beneficial strains for digestive balance.",
     features: [
       "20 billion CFU",
@@ -1740,7 +1740,7 @@ const products = [
     stockCount: 76,
     sku: "DH-LAX-GENT",
     manufacturer: "GentleMove Labs",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Gentle overnight relief from occasional constipation.",
     features: [
       "Works overnight",
@@ -1768,7 +1768,7 @@ const products = [
     stockCount: 83,
     sku: "DH-DIAR-CAP",
     manufacturer: "StopFlow Pharma",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Fast relief from acute diarrhea and travelers' diarrhea.",
     features: [
       "Fast-acting relief",
@@ -1796,7 +1796,7 @@ const products = [
     stockCount: 61,
     sku: "DH-FIB-POW",
     manufacturer: "FiberWell Nutrition",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Natural psyllium fiber supplement for digestive regularity.",
     features: [
       "100% natural psyllium",
@@ -1826,7 +1826,7 @@ const products = [
     stockCount: 87,
     sku: "EC-TEAR-DROP",
     manufacturer: "ClearVision Labs",
-    images: ["https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FMoov_100.webp&w=640&q=100"],
     description: "Lubricating eye drops for dry eye relief.",
     features: [
       "Long-lasting relief",
@@ -1854,7 +1854,7 @@ const products = [
     stockCount: 63,
     sku: "EC-ALL-DROP",
     manufacturer: "AllerRelief Vision",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Antihistamine eye drops for allergic conjunctivitis.",
     features: [
       "Fast itch relief",
@@ -1882,7 +1882,7 @@ const products = [
     stockCount: 74,
     sku: "EC-WASH-110",
     manufacturer: "PureEye Solutions",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Sterile eye wash for flushing irritants and debris.",
     features: [
       "Sterile formula",
@@ -1910,7 +1910,7 @@ const products = [
     stockCount: 52,
     sku: "EC-LUT-VIT",
     manufacturer: "VisionCare Nutrition",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Comprehensive eye health supplement with lutein and zeaxanthin.",
     features: [
       "Supports macular health",
@@ -1940,7 +1940,7 @@ const products = [
     stockCount: 94,
     sku: "SC-ACN-GEL",
     manufacturer: "ClearSkin Labs",
-    images: ["https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_0NocXVY.png&w=256&q=100"],
     description: "Fast-acting acne treatment gel with salicylic acid.",
     features: [
       "2% salicylic acid",
@@ -1968,7 +1968,7 @@ const products = [
     stockCount: 67,
     sku: "SC-RET-SER",
     manufacturer: "YouthfulGlow Skincare",
-    images: ["https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_3_fbyDUCX.png&w=256&q=100"],
     description: "Premium retinol serum for fine lines, wrinkles, and skin texture.",
     features: [
       "1% retinol",
@@ -1996,7 +1996,7 @@ const products = [
     stockCount: 103,
     sku: "SC-MOIST-30",
     manufacturer: "HydroSkin Care",
-    images: ["https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_12.png&w=256&q=100"],
     description: "Daily moisturizer with broad-spectrum SPF 30 protection.",
     features: [
       "SPF 30 protection",
@@ -2024,7 +2024,7 @@ const products = [
     stockCount: 81,
     sku: "SC-VIT-SER",
     manufacturer: "RadiantSkin Solutions",
-    images: ["https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2F01-combo.png&w=256&q=100"],
     description: "Powerful vitamin C serum for brightening and anti-aging.",
     features: [
       "20% vitamin C",
@@ -2052,7 +2052,7 @@ const products = [
     stockCount: 72,
     sku: "SC-ECZ-CRM",
     manufacturer: "SkinSoothe Labs",
-    images: ["https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_1_biUwD9u.png&w=256&q=100"],
     description: "Intensive cream for eczema-prone and very dry skin.",
     features: [
       "Colloidal oatmeal",
@@ -2110,7 +2110,7 @@ const products = [
     stockCount: 64,
     sku: "HC-GROW-SUPP",
     manufacturer: "HairVital Nutrition",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Biotin and collagen supplement for hair strength and growth.",
     features: [
       "10,000mcg Biotin",
@@ -2138,7 +2138,7 @@ const products = [
     stockCount: 48,
     sku: "HC-MIN-5PC",
     manufacturer: "RegrowRX Labs",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Clinically proven topical solution for hair regrowth.",
     features: [
       "5% minoxidil",
@@ -2166,7 +2166,7 @@ const products = [
     stockCount: 92,
     sku: "HC-COND-MASK",
     manufacturer: "SilkHair Solutions",
-    images: ["https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-MOdbPvRMotiueNWQLLet1JpwZIDnGG.png&w=750&q=75"],
     description: "Intensive repair treatment for damaged and dry hair.",
     features: [
       "Argan oil & keratin",
@@ -2196,7 +2196,7 @@ const products = [
     stockCount: 156,
     sku: "OC-WHT-PAST",
     manufacturer: "BrightSmile Dental",
-    images: ["https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FMoov_100.webp&w=640&q=100"],
     description: "Advanced whitening toothpaste for brighter, whiter teeth.",
     features: [
       "Removes surface stains",
@@ -2224,7 +2224,7 @@ const products = [
     stockCount: 127,
     sku: "OC-MOUT-500",
     manufacturer: "FreshBreath Labs",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Alcohol-free mouthwash for complete oral hygiene.",
     features: [
       "Kills 99% bacteria",
@@ -2252,7 +2252,7 @@ const products = [
     stockCount: 98,
     sku: "OC-SENS-PAST",
     manufacturer: "SensoCare Dental",
-    images: ["https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FMoov_100.webp&w=640&q=100"],
     description: "Specialized toothpaste for sensitive teeth relief.",
     features: [
       "Rapid relief",
@@ -2280,7 +2280,7 @@ const products = [
     stockCount: 187,
     sku: "OC-FLOSS-MIN",
     manufacturer: "FlossPro Dental",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Premium dental floss for thorough plaque removal.",
     features: [
       "Shred-resistant",
@@ -2338,7 +2338,7 @@ const products = [
     stockCount: 31,
     sku: "RC-NEB-PORT",
     manufacturer: "AirFlow Medical",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Compact nebulizer for respiratory medication delivery.",
     features: [
       "Quiet operation",
@@ -2366,7 +2366,7 @@ const products = [
     stockCount: 67,
     sku: "RC-BREATH-EX",
     manufacturer: "LungStrength Pro",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Inspiratory muscle training device for respiratory strength.",
     features: [
       "Strengthens breathing muscles",
@@ -2424,7 +2424,7 @@ const products = [
     stockCount: 142,
     sku: "SW-COND-12",
     manufacturer: "SafeChoice Protection",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Premium ultra-thin condoms for maximum sensitivity.",
     features: [
       "Ultra-thin design",
@@ -2452,7 +2452,7 @@ const products = [
     stockCount: 98,
     sku: "SW-LUBE-100",
     manufacturer: "IntimateComfort Labs",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "High-quality water-based personal lubricant.",
     features: [
       "Water-based formula",
@@ -2480,7 +2480,7 @@ const products = [
     stockCount: 47,
     sku: "SW-EMERG-PILL",
     manufacturer: "FemCare Pharma",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Emergency contraception to prevent pregnancy after unprotected sex.",
     features: [
       "Single-dose tablet",
@@ -2510,7 +2510,7 @@ const products = [
     stockCount: 89,
     sku: "WH-PREN-VIT",
     manufacturer: "MaternalCare Nutrition",
-    images: ["https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-5Di5ZBQiGjj1TcIWs6aydbGw7JUFFg.jpg&w=640&q=100"],
     description: "Complete prenatal vitamin formula for pregnancy and nursing.",
     features: [
       "800mcg folic acid",
@@ -2538,7 +2538,7 @@ const products = [
     stockCount: 64,
     sku: "WH-MENO-SUPP",
     manufacturer: "FemBalance Labs",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Natural supplement for menopause symptom relief.",
     features: [
       "Black cohosh extract",
@@ -2566,7 +2566,7 @@ const products = [
     stockCount: 76,
     sku: "WH-CRAN-UTI",
     manufacturer: "UrinaryHealth Pro",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "High-strength cranberry extract for urinary tract health.",
     features: [
       "36mg PACs per serving",
@@ -2594,7 +2594,7 @@ const products = [
     stockCount: 58,
     sku: "WH-YEAST-TRT",
     manufacturer: "FemCare Pharma",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Complete yeast infection treatment kit with applicators.",
     features: [
       "1-day or 3-day treatment",
@@ -2624,7 +2624,7 @@ const products = [
     stockCount: 92,
     sku: "MH-MULTI-MEN",
     manufacturer: "MenVital Nutrition",
-    images: ["https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-5Di5ZBQiGjj1TcIWs6aydbGw7JUFFg.jpg&w=640&q=100"],
     description: "Comprehensive multivitamin tailored for men's health needs.",
     features: [
       "Supports energy",
@@ -2652,7 +2652,7 @@ const products = [
     stockCount: 67,
     sku: "MH-SAW-PALM",
     manufacturer: "ProstaCare Labs",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Natural saw palmetto supplement for prostate health.",
     features: [
       "320mg standardized extract",
@@ -2680,7 +2680,7 @@ const products = [
     stockCount: 54,
     sku: "MH-TEST-SUPP",
     manufacturer: "MenVital Nutrition",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Natural formula to support healthy testosterone levels.",
     features: [
       "D-Aspartic acid",
@@ -2708,7 +2708,7 @@ const products = [
     stockCount: 41,
     sku: "MH-HAIR-LOSS",
     manufacturer: "HairRestore Labs",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Natural DHT blocker supplement for male pattern hair loss.",
     features: [
       "Saw palmetto & pumpkin seed",
@@ -2738,7 +2738,7 @@ const products = [
     stockCount: 78,
     sku: "MW-STRESS-REL",
     manufacturer: "CalmMind Nutrition",
-    images: ["https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-5Di5ZBQiGjj1TcIWs6aydbGw7JUFFg.jpg&w=640&q=100"],
     description: "Natural adaptogen blend for stress management and relaxation.",
     features: [
       "Ashwagandha extract",
@@ -2766,7 +2766,7 @@ const products = [
     stockCount: 134,
     sku: "MW-SLEEP-MEL",
     manufacturer: "RestWell Labs",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Melatonin supplement for better sleep quality.",
     features: [
       "5mg melatonin",
@@ -2794,7 +2794,7 @@ const products = [
     stockCount: 62,
     sku: "MW-MOOD-SUPP",
     manufacturer: "MindBalance Pro",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Natural supplement with St. John's Wort for mood support.",
     features: [
       "St. John's Wort extract",
@@ -2822,7 +2822,7 @@ const products = [
     stockCount: 71,
     sku: "MW-FOCUS-SUP",
     manufacturer: "BrainBoost Labs",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Nootropic blend for mental clarity and focus.",
     features: [
       "Bacopa & Ginkgo biloba",
@@ -2880,7 +2880,7 @@ const products = [
     stockCount: 68,
     sku: "MD-PULSE-OX",
     manufacturer: "VitalCheck Medical",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "Fingertip pulse oximeter for measuring blood oxygen saturation and heart rate.",
     features: [
       "Accurate SpO2 reading",
@@ -2908,7 +2908,7 @@ const products = [
     stockCount: 52,
     sku: "MD-HEAT-PAD",
     manufacturer: "ComfortHeat Pro",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Electric heating pad for pain relief and muscle relaxation.",
     features: [
       "6 heat settings",
@@ -2936,7 +2936,7 @@ const products = [
     stockCount: 87,
     sku: "MD-COMP-SOCK",
     manufacturer: "CircuFlow Medical",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Graduated compression socks for circulation and leg fatigue.",
     features: [
       "15-20 mmHg compression",
@@ -3022,7 +3022,7 @@ const products = [
     stockCount: 71,
     sku: "FN-PREWORK-EN",
     manufacturer: "PowerBoost Sports",
-    images: ["https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-bPeNEf3ji5VZ5Kofd4BBw17qLInIPM.jpg&w=1920&q=75"],
     description: "High-energy pre-workout formula for enhanced performance.",
     features: [
       "200mg caffeine",
@@ -3050,7 +3050,7 @@ const products = [
     stockCount: 112,
     sku: "FN-CREAT-MON",
     manufacturer: "StrengthMax Supplements",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Pure micronized creatine monohydrate for strength and power.",
     features: [
       "5g per serving",
@@ -3078,7 +3078,7 @@ const products = [
     stockCount: 58,
     sku: "FN-MEAL-VAN",
     manufacturer: "CompleteNutrition Co.",
-    images: ["https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2FBlack_Friday_Special_Offer_with_Podium_Product_Instagram_Post_15.png&w=640&q=100"],
     description: "Complete meal replacement with vitamins, minerals, and protein.",
     features: [
       "20g protein",
@@ -3106,7 +3106,7 @@ const products = [
     stockCount: 83,
     sku: "FN-BCAA-POW",
     manufacturer: "RecoverFast Labs",
-    images: ["https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop"],
+    images: ["https://medeasy.health/_next/image?url=https%3A%2F%2Fapi.medeasy.health%2Fmedia%2Fmedicines%2Fnormal-5Di5ZBQiGjj1TcIWs6aydbGw7JUFFg.jpg&w=640&q=100"],
     description: "Branched-chain amino acids for muscle recovery and endurance.",
     features: [
       "2:1:1 ratio",

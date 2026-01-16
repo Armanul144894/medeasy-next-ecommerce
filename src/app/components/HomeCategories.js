@@ -63,16 +63,16 @@ export default function HomeCategories() {
                     slidesPerView={2}
                     observer
                     observeParents
-                    watchOverflow
+                    watchOverflow={true}
                     breakpoints={{
                         640: { slidesPerView: 3 },
                         768: { slidesPerView: 4 },
                         1024: { slidesPerView: 6 },
                     }}
-                    className="w-full max-w-full"
+                    className="!pb-4"
                 >
                     {categories.map((cat, index) => (
-                        <SwiperSlide key={index}>
+                        <SwiperSlide key={index} className="h-auto">
                             <Link
                                 href={`/category/${slugify(cat.name)}`}
                                 className="w-full"
