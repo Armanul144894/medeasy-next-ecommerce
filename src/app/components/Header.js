@@ -74,7 +74,7 @@ export default function Header({ cartCount = 3 }) {
                 onClick={() => setSignInOpen(true)}
                 className="relative p-2 hover:bg-gray-100 rounded-full cursor-pointer"
               >
-               <ShoppingCart size={24} className="text-gray-600" />
+               <User size={24} className="text-gray-600" />
               </button>
 
               

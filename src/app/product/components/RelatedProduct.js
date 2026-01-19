@@ -47,6 +47,8 @@ export default function RelatedProduct({ relatedProducts }) {
           observeParents
           watchOverflow
           breakpoints={{
+            380: { slidesPerView: 1.5 },
+            540: { slidesPerView: 2 },
             640: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
             1380: { slidesPerView: 5 },
