@@ -18,7 +18,7 @@ import Image from "next/image";
 export default function ProductGrid({ selectedProduct, selectedImage, setSelectedImage, quantity, incrementQuantity, decrementQuantity }) {
 
     return (
-        <div className="min-h-screen">
+        <div className="">
             <div className="grid xl:grid-cols-2 gap-8 mb-12">
                 {/* Product Images */}
                 <div className="">

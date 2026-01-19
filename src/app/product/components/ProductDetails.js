@@ -77,8 +77,7 @@ const allProducts = products;
   };
 
   return (
-    <div className="min-h-screen">
-      <div className="">
+    <div className="">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-600 mb-6">
           <Link href={"/"}>
@@ -113,6 +112,5 @@ const allProducts = products;
         <RelatedProduct relatedProducts={relatedProducts}/>
         
       </div>
-    </div>
   );
 }

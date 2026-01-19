@@ -11,7 +11,7 @@ export default function MainLayout({ children }) {
   return (
     <div className="relative bg-[#f0f8ff]">
       <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
-      <div className="container-fluid mx-auto px-4 py-6 relative">
+      <div className="container-fluid max-w-[1920] mx-auto px-4 py-6 relative">
         <div className="flex lg:gap-6 items-start">
 
           {/* Sidebar - LEFT SIDE ON DESKTOP */}

@@ -1,21 +1,14 @@
 "use client";
-import {
-  Mail,
-  Menu,
-  Phone,
-  Search,
-  ShoppingCart,
-  User,
-  X,
-} from "lucide-react";
+import { Mail, Menu, Phone, Search, ShoppingCart, User, X } from "lucide-react";
 import React, { useState } from "react";
 import Link from "next/link";
 import CartOffcanvas from "./CartOffcanvas";
 import CategoryOffcanvas from "./CategoryOffcanvas";
-
+import SignInModal from "./SignInModal";
 
 export default function Header({ cartCount = 3 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSignInOpen, setSignInOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -24,7 +17,7 @@ export default function Header({ cartCount = 3 }) {
       <header className="bg-white shadow-md">
         {/* Top Bar */}
         <div className="bg-teal-600 text-white text-sm">
-          <div className="container-fluid mx-auto px-4 py-2 flex justify-between items-center">
+          <div className="container-fluid max-w-[1920px] mx-auto px-4 py-2 flex justify-between items-center">
             <div className="flex items-center gap-4">
               <span className="flex items-center gap-1">
                 <Phone size={14} />
@@ -44,7 +37,7 @@ export default function Header({ cartCount = 3 }) {
         </div>
 
         {/* Main Header */}
-        <div className="container-fluid mx-auto px-4 py-4">
+        <div className="container-fluid max-w-[1920px] mx-auto px-4 py-4">
           <div className="flex items-center justify-between gap-4">
             {/* Logo */}
             <div className="flex items-center gap-2">
@@ -76,9 +69,15 @@ export default function Header({ cartCount = 3 }) {
 
             {/* Actions */}
             <div className="flex items-center gap-4">
-              <button className="relative p-2 hover:bg-gray-100 rounded-full cursor-pointer">
-                <User size={24} className="text-gray-600" />
+              {/* Demo Button */}
+              <button
+                onClick={() => setSignInOpen(true)}
+                className="relative p-2 hover:bg-gray-100 rounded-full cursor-pointer"
+              >
+               <ShoppingCart size={24} className="text-gray-600" />
               </button>
+
+              
               <button
                 onClick={() => setIsOpen(true)}
                 className="relative p-2 hover:bg-gray-100 rounded-full cursor-pointer"
@@ -108,13 +107,16 @@ export default function Header({ cartCount = 3 }) {
             </div>
           </div>
 
-
           {/* Sidebar - Categories (LEFT SIDE) */}
-          <CategoryOffcanvas sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-
+          <CategoryOffcanvas
+            sidebarOpen={sidebarOpen}
+            setSidebarOpen={setSidebarOpen}
+          />
 
           {/* Cart Offcanvas (RIGHT SIDE) */}
           <CartOffcanvas isOpen={isOpen} setIsOpen={setIsOpen} />
+
+          <SignInModal isSignInOpen={isSignInOpen} setSignInOpen={setSignInOpen}/>
         </div>
       </header>
     </div>

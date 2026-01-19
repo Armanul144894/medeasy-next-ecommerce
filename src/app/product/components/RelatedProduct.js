@@ -41,7 +41,7 @@ export default function RelatedProduct({ relatedProducts }) {
             nextEl: ".cat-next",
           }}
           spaceBetween={16}
-          slidesPerView={2}
+          slidesPerView={1}
           speed={2000}
           observer
           observeParents

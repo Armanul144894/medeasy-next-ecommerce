@@ -100,7 +100,7 @@ export default function page() {
     };
 
     return (
-        <div className="min-h-screen">
+        <div className="">
 
             <div className=" px-4 py-8">
                 {/* Breadcrumb */}

@@ -51,8 +51,7 @@ export default function ProductCategoryCard() {
   /* ================= UI ================= */
 
   return (
-    <div className="min-h-screen">
-      <main className="">
+    <div className="">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-600 mb-6">
           <Link href="/">
@@ -96,8 +95,7 @@ export default function ProductCategoryCard() {
 
         {/* Products Grid */}
         <FilteredProductCard filteredProducts={filteredProducts} />
-      </main>
-    </div>
+      </div>
   );
 }
  
