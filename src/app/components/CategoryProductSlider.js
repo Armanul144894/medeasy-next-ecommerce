@@ -96,12 +96,12 @@ export default function CategoryProduct({ category, products }) {
             },
             // Tablet - Medium (768px)
             768: {
-              slidesPerView: 2.5,
+              slidesPerView: 3,
               spaceBetween: 16,
             },
             // Tablet - Medium (840px)
             840: {
-              slidesPerView: 3,
+              slidesPerView: 3.5,
               spaceBetween: 16,
             },
             // Laptop - Small (1024px)
@@ -116,7 +116,7 @@ export default function CategoryProduct({ category, products }) {
             },
             // Desktop (1536px)
             1536: {
-              slidesPerView: 4.5,
+              slidesPerView: 5.5,
               spaceBetween: 24,
             },
           }}

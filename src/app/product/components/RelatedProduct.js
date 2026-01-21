@@ -51,7 +51,12 @@ export default function RelatedProduct({ relatedProducts }) {
             540: { slidesPerView: 2 },
             640: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
-            1380: { slidesPerView: 5 },
+            1380: { slidesPerView: 4 },
+            // Desktop (1536px)
+            1536: {
+              slidesPerView: 5.5,
+              spaceBetween: 24,
+            },
           }}
           className="w-full max-w-full"
         >

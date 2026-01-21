@@ -31,7 +31,7 @@ export default function page() {
         <div className="bg-gradient-to-r from-teal-500 to-cyan-600 rounded-lg p-12 mb-8 text-white text-center">
           <h1 className="text-5xl font-bold mb-4">Get in Touch</h1>
           <p className="text-xl text-teal-100 max-w-3xl mx-auto">
-            Have questions? We're here to help. Reach out to us anytime!
+            Have questions? We are here to help. Reach out to us anytime!
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export default function page() {
               href="tel:+18002633227"
               className="text-teal-600 font-semibold hover:text-teal-700"
             >
-              +1-800-MEDCARE
+              +1-800-ADORZOTNO
             </Link>
           </div>
 
@@ -56,12 +56,12 @@ export default function page() {
               <Mail className="text-blue-600" size={28} />
             </div>
             <h3 className="text-lg font-bold text-gray-800 mb-2">Email Us</h3>
-            <p className="text-gray-600 mb-2">We'll respond within 24 hours</p>
+            <p className="text-gray-600 mb-2">We will respond within 24 hours</p>
             <Link
-              href="mailto:support@medeasy.health"
+              href="mailto:support@adorzotno.health"
               className="text-teal-600 font-semibold hover:text-teal-700"
             >
-              support@medeasy.health
+              support@adorzotno.health
             </Link>
           </div>
 
@@ -164,20 +164,32 @@ export default function page() {
         </div>
 
         {/* Map Section */}
-        <div className="bg-white rounded-lg shadow-md p-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            Find Us Here
-          </h2>
-          <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-            <div className="text-center text-gray-500">
-              <MapPin size={48} className="mx-auto mb-3" />
-              <p className="text-lg">Map Location</p>
-              <p className="text-sm">
-                123 Health Street, Medical City, MC 12345
-              </p>
-            </div>
-          </div>
-        </div>
+<div className="bg-white rounded-lg shadow-md p-8">
+  <h2 className="text-3xl font-bold text-gray-800 mb-6">
+    Find Us Here
+  </h2>
+  <div className="rounded-lg overflow-hidden h-96 shadow-lg">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.8289847623843!2d90.36446407592128!3d23.79771358666969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c12f97592a55%3A0x5b764a4d6a0b7cc8!2sMirpur%202%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1234567890123!5m2!1sen!2sbd"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Adorzotno Location"
+    ></iframe>
+  </div>
+  <div className="mt-6 flex items-start gap-3 text-gray-700">
+    <MapPin size={24} className="text-teal-600 flex-shrink-0 mt-1" />
+    <div>
+      <p className="font-semibold text-lg">Our Address</p>
+      <p className="text-gray-600">
+        H# 18/A (4th Floor), R# Avenue-1, Block# C, Mirpur-2, Dhaka-1216
+      </p>
+    </div>
+  </div>
+</div>
       </main>
     </div>
   );

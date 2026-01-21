@@ -1,4 +1,4 @@
-'use client';
+;
 import Link from 'next/link';
 import allCategories from '../../../data/category';
 
